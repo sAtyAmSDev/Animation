@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+@keyframes carMove {
+      0% {
+        left: -200px;
+      }
+      100% {
+        left: 120%;
+      }
+    }
+    @keyframes wheel {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .car {
+      border-bottom: 1px solid gray;
+      animation: carMove 5s 0s infinite linear;
+      width: min-content;
+      /* display: flex; */
+      position: relative;
+      left: -200px;
+      top: 0;
+    }
+    .top {
+      height: 26px;
+      background: black;
+      width: 134px;
+    }
+    .wheel {
+      display: flex;
+      justify-content: space-between;
+      padding: 3px;
+    }
+    .wheel1 {
+      animation: wheel 3s 0s infinite linear;
+      border: 1px solid gray;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50% 50% 0px 0px;
+    }
+
+</style>
+<body>
+    
+   <div class="car">
+    <div class="top"></div>
+    <div class="wheel">
+      <div class="wheel1"></div>
+      <div class="wheel1"></div>
+    </div>
+  </div> 
+</body>
+</html>

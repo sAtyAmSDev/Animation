@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+     @keyframes BoxColor {
+      0% {
+        left: 0;
+        top: 0;
+        background-color: red;
+      }
+      25% {
+        left: 200px;
+        top: 0;
+        background-color: yellow;
+      }
+      50% {
+        left: 200px;
+        top: 200px;
+        background-color: green;
+      }
+      75% {
+        left: 0;
+        top: 200px;
+        background-color: gray;
+      }
+      100% {
+        left: 0;
+        top: 0;
+        background-color: red;
+      }
+    }
+    .box {
+      animation-name: BoxColor;
+      animation-duration: 3s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  
+  </style>
+  <body>
+    <div class="box"></div>
+
+   
+
+  </body>
+</html>

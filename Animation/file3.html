@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+   
+    @keyframes HideButton {
+      0% {
+        transform: scale(1, 1);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.5, 1.5);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(1, 1);
+        opacity: 0;
+      }
+    }
+
+    button {
+      margin: 5pc 5pc;
+      padding: 10px;
+      border: 1px solid gray;
+      position: relative;
+      border-radius: 10px;
+    }
+    .hide {
+      position: absolute;
+      background-color: rgb(165, 136, 42);
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+      opacity: 0;
+      animation: HideButton 3s 0s infinite linear;
+    }
+
+</style>
+<body>
+    <button>
+        Start
+        <div class="hide"></div>
+      </button> 
+</body>
+</html>
